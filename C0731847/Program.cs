@@ -11,6 +11,10 @@ namespace C0731847
         static void Main(string[] args)
 
         {}
+        class Countryside
+        {
+
+        }
 
     class Village
         {
