@@ -9,7 +9,13 @@ namespace C0731847
     class Program
     {
         static void Main(string[] args)
+
+        {}
+
+    class Node
         {
+            Node PreviousNode;
+            Node NextNode;
         }
     }
 }
