@@ -19,7 +19,12 @@ namespace C0731847
     class Village
         {
            Village PreviousVillage;
-           Village NextVillage; 
+           Village NextVillage;
+            String Villagename;
+            bool isAstrildeHere = false;
+            bool isScheningHere = false;
+            bool isMaelandHere = false;
+            public  Village() { }
         }
     }
 }
