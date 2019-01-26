@@ -18,25 +18,35 @@ namespace C0731847
             Village Schenig;
             public void Initializemap()
             {
-                 Alst = new Village();
+                Alst = new Village();
+                Alst.VillageName = "Alst";
                 Maeland = new Village();
+                Maeland.VillageName = "Maeland";
                 Maeland.isAstrildeHere = true;
-                 Schenig = new Village();
+                Schenig = new Village();
+                Schenig.VillageName = " Schenig";
 
                 Alst.NextVillage = Maeland;
                 Maeland.NextVillage = Schenig;
                 Schenig.NextVillage = Alst;
             }
-            public void WalkAround()
+            public void FindAstrilde()
             {
-                Village initiallVillage = this.Maeland;
+                Village CurrentVillage = this.Maeland;
+                if (CurrentVillage.isAstrildeHere)
+                {
+                    Console.WriteLine("Hugi found Astrilde!!! Celeberations");
+                }
+                Village NextVillage;
+                NextVillage = CurrentVillage.NextVillage;
             }
+        
 
             class Village
             {
                 public Village PreviousVillage;
                 public Village NextVillage;
-                public String Villagename;
+                public String VillageName;
                 public bool isAstrildeHere = false;
 
 
