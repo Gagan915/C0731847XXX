@@ -12,10 +12,10 @@ namespace C0731847
 
         {}
 
-    class Node
+    class Village
         {
-            Node PreviousNode;
-            Node NextNode;
+           Village PreviousVillage;
+           Village NextVillage; 
         }
     }
 }
